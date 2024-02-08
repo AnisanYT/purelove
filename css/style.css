@@ -215,3 +215,19 @@ p{
 .botones button:hover {
     background-color: #0056b3;
 }
+.swiper-slide {
+    position: relative;
+}
+
+.boton-superpuesto {
+    position: absolute;
+    top: 31rem;
+    left: 30rem;
+    padding: 20px 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
