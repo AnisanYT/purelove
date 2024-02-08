@@ -133,7 +133,7 @@ p{
 
 
 /* Estilos para la capa modal */
-.modal, .modal2{
+.modal, .modal2, .modal3{
     display: none; /* Oculta la capa modal inicialmente */
     position: fixed;
     top: 0;
