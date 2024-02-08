@@ -131,20 +131,7 @@ p{
 }
 
 
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url(../img/img_projec.jpg);
-    }
-    #hidden_div{
-        flex-direction: column;
-        align-items: space-between;
-    }
-    #lifes_dalesya{
-        margin-top: 1.3rem;
-    }
 
-
-}
 /* Estilos para la capa modal */
 .modal {
     display: none; /* Oculta la capa modal inicialmente */
@@ -230,4 +217,25 @@ p{
     border-radius: 5px;
     cursor: pointer;
     z-index: 999;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url(../img/img_projec.jpg);
+    }
+    #hidden_div{
+        flex-direction: column;
+        align-items: space-between;
+    }
+    #lifes_dalesya{
+        margin-top: 1.3rem;
+    }
+
+    .boton-superpuesto{
+        top: 9rem;
+        left: 2rem;
+        text-wrap: wrap;
+        width: 10rem;
+    }
+
 }
