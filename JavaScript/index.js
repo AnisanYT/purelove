@@ -2,7 +2,7 @@ function showCards(){
     var div_HTML = document.getElementById("hidden_div");
 
     var new_button = '<a onclick="reproducirAudio()" id="lifes_dalesya">¿Quieres escuchar algo bonito? 🤭</a>' +
-    '<a onclick="abrirCarrousel()" id="lifes_dalesya">Para la más hermosa e indocumentada mujer</a>' +
+    '<a onclick="abrirVentana()" id="lifes_dalesya">Para la más hermosa e indocumentada mujer</a>' +
     '<a href="tus.html" id="lifes_dalesya">Mis más hermosos deseos.</a>';
     //var new_divWithCard = '<div class="card"> <img src="img/img_projec_4.jpg" alt="La sonrisa mas hermosa que veras."> <div class="card-info"> <h2>La sonrisa mas hermosa</h2> <p>Tu corazón es tan grande como tu sonrisa, y en tu cumpleaños, quiero recordarte lo especial que eres para mí. Eres el amor de mi vida</p> </div> </div>';
     div_HTML.innerHTML = new_button;
@@ -33,4 +33,32 @@ function abrirCarrousel() {
 function cerrarCarrousel() {
     // Oculta la capa modal al cerrar el carrousel
     document.getElementById('modal').style.display = 'none';
+}
+
+function abrirVentana() {
+    // Muestra la ventana emergente
+    document.getElementById('ventanaEmergente').style.display = 'block';
+}
+
+function enviarMensajeWhatsApp() {
+    // Número de teléfono al que enviar el mensaje (incluyendo código de país)
+    var telefono = '+50688290861';
+
+    // Mensaje a enviar
+    var mensaje = 'Bueno, me comprometo enviar foto de mis ttas mas tade. JAJA. NOTA: Vuelve a la pagina que aun no termina mamahueva.';
+
+    // URL de WhatsApp con el número y el mensaje
+    var url = 'https://wa.me/' + telefono + '?text=' + encodeURIComponent(mensaje);
+
+    // Abrir la ventana de WhatsApp
+    window.open(url);
+    abrirCarrousel();
+    document.getElementById('ventanaEmergente').style.display = "none";
+}
+
+function respuestaNo() {
+    // Obtener el elemento de audio por su ID
+    var audioElement = document.getElementById('audioCas');
+    // Reproducir el audio
+    audioElement.play();
 }
