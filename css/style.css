@@ -1,6 +1,6 @@
 body{
     background-image: url(../img/img_projec_4.png);
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-position: top left, center, bottom right;
     font-size: 1.9rem;
