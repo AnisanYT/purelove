@@ -41,17 +41,7 @@ function abrirVentana() {
 }
 
 function enviarMensajeWhatsApp() {
-    // Número de teléfono al que enviar el mensaje (incluyendo código de país)
-    var telefono = '+50688290861';
-
-    // Mensaje a enviar
-    var mensaje = 'Bueno, me comprometo enviar foto de mis ttas mas tade. JAJA. NOTA: Vuelve a la pagina que aun no termina mamahueva.';
-
-    // URL de WhatsApp con el número y el mensaje
-    var url = 'https://wa.me/' + telefono + '?text=' + encodeURIComponent(mensaje);
-
-    // Abrir la ventana de WhatsApp
-    window.open(url);
+    alert("Bueno, espero la fotito 🤑")
     abrirCarrousel();
     document.getElementById('ventanaEmergente').style.display = "none";
 }
