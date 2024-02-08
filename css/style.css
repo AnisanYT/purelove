@@ -1,7 +1,7 @@
 body{
     background-image: url(../img/img_projec_4.png);
     background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top left, center, bottom right;
     font-size: 1.9rem;
     font-style: 'Protest';
@@ -39,7 +39,7 @@ h2{
     border-radius: 1rem;
 }
 
-button, .link_togo_dont_pressed, .lifes_dalesya{
+button, .link_togo_dont_pressed, #lifes_dalesya{
     background: none;
     padding: 1rem;
     border-radius: 1.9rem;
@@ -47,7 +47,7 @@ button, .link_togo_dont_pressed, .lifes_dalesya{
     color: #fff;
 }
 
-button:hover, .link_togo_dont_pressed:hover, .lifes_dalesya:hover{
+button:hover, .link_togo_dont_pressed:hover, #lifes_dalesya:hover{
     background-color: #fff;
     color: #000;
     border: .1rem solid #fff;
@@ -126,7 +126,7 @@ p{
     border-radius: 4px;
 }
 
-.lifes_dalesya{
+#lifes_dalesya{
     text-decoration: none;
 }
 
@@ -139,9 +139,10 @@ p{
         flex-direction: column;
         align-items: space-between;
     }
-    .lifes_dalesya{
+    #lifes_dalesya{
         margin-top: 1.3rem;
     }
 
 
 }
+
