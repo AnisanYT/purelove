@@ -76,11 +76,6 @@ p{
 }
 
 
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url(../img/img_projec.jpg);
-    }
-}
 
 #hidden_div{
     padding-left: 4rem;
@@ -135,3 +130,18 @@ p{
     text-decoration: none;
 }
 
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url(../img/img_projec.jpg);
+    }
+    #hidden_div{
+        flex-direction: column;
+        align-items: space-between;
+    }
+    .lifes_dalesya{
+        margin-top: 1.3rem;
+    }
+
+
+}
