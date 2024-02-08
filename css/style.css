@@ -133,7 +133,7 @@ p{
 
 
 /* Estilos para la capa modal */
-.modal {
+.modal, .modal2{
     display: none; /* Oculta la capa modal inicialmente */
     position: fixed;
     top: 0;
@@ -145,6 +145,8 @@ p{
     overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
     padding-top: 50px; /* Añade espacio para los botones de navegación */
 }
+
+
 
 /* Estilos para el carrousel */
 .swiper-container {

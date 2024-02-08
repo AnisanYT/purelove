@@ -31,17 +31,28 @@ function abrirCarrousel() {
     });
 }
 function cerrarCarrousel() {
-    // Oculta la capa modal al cerrar el carrousel
     document.getElementById('modal').style.display = 'none';
 }
 
+function cerrarCarrousel2() {
+    document.getElementById('modal2').style.display = 'none';
+}
 function abrirVentana() {
-    // Muestra la ventana emergente
     document.getElementById('ventanaEmergente').style.display = 'block';
 }
 
 function enviarMensajeWhatsApp() {
+    var audioElement = document.getElementById('audioNose');
+    audioElement.play()
     alert("Bueno, espero la fotito 🤑")
+    var telefono = '+50671878704';
+    // Mensaje a enviar
+    var mensaje = 'Bueno, me comprometo a enviar foto de mis ttas mas tarde. NOTA: Vuelve a la pagina que aun no termina mamahueva.';
+    // URL de WhatsApp con el número y el mensaje
+    var url = 'https://wa.me/' + telefono + '?text=' + encodeURIComponent(mensaje);
+    
+    // Abrir la ventana de WhatsApp
+    window.open(url);
     abrirCarrousel();
     document.getElementById('ventanaEmergente').style.display = "none";
 }
@@ -51,4 +62,9 @@ function respuestaNo() {
     var audioElement = document.getElementById('audioCas');
     // Reproducir el audio
     audioElement.play();
+}
+
+function moodSerious(){
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal2').style.display = 'block';
 }
