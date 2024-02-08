@@ -61,8 +61,13 @@ img{
     font-size: 1rem;
     border-radius: 1.3rem;
     font-size: .7rem;
+    text-decoration: none;
 }
 
+.material-symbols-outlined{
+    color: rgb(197, 95, 95);
+    font-size: .8rem;
+}
 
 @media only screen and (max-width: 768px) {
     body {
