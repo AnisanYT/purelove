@@ -14,29 +14,71 @@
         </svg>
     </div>
 
-    <button>
-        <span id="letter1" class="material-symbols-outlined">
+    <button id="letter1" onclick="abrirVentana()">
+        <span id="sizeFont" class="material-symbols-outlined">
             mail
         </span>
     </button>
-    <button>
-        <span id="letter2" class="material-symbols-outlined">
+    <button onclick="abrirVentana3()" id="letter2">
+        <span id="sizeFont" class="material-symbols-outlined">
             mail
         </span>
     </button>
-    <button>
-        <span id="letter3" class="material-symbols-outlined">
+    <button onclick="abrirVentana2()" id="letter3">
+        <span id="sizeFont" class="material-symbols-outlined">
             mail
         </span>
     </button>
-    <button>
-        <span id="letter4" class="material-symbols-outlined">
+    <button onclick="abrirVentana4()" id="letter4">
+        <span id="sizeFont" class="material-symbols-outlined">
             mail
         </span>
     </button>
 
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="ventana-emergente" id="ventanaEmergente">
+        <button class="cerrar" onclick="cerrarVentana()">Cerrar</button>
+        <div class="contenido">
+            <h2>Mi Mensaje</h2>
+            <p>No olvide que usted es su propia órbita en un mundo tan abierto. <br> Conseguirás un gran destino porque su seguridad nadie debe de quitársela.</p>
+            <img src="../img/moon1.jpg" alt="Imagen" width="120vw">
+        </div>
+    </div>
+
+    <div class="overlay2" id="overlay2"></div>
+
+    <div class="ventana-emergente2" id="ventanaEmergente2">
+        <button class="cerrar2" onclick="cerrarVentana2()">Cerrar</button>
+        <div class="contenido2">
+            <h2>Mi Mensaje</h2>
+            <p>Recuerde siempre que usted es un cuerpo celeste que <br> gira alrededor de los planetas. <br> Así te miro, como un satélite natural girando en la tierra.</p>
+            <img src="../img/moon2.jpg" alt="Imagen" width="120vw">
+        </div>
+    </div>
+
+    <div class="overlay3" id="overlay3"></div>
+
+    <div class="ventana-emergente3" id="ventanaEmergente3">
+        <button class="cerrar3" onclick="cerrarVentana3()">Cerrar</button>
+        <div class="contenido3">
+            <h2>Mi Mensaje</h2>
+            <p>Aún cuando vea las circunstancias difíciles, no deje de lado sus valores <br> porque es la característica inicial de su personalidad. <br> Mostrando lealtad, compromiso y respeto a usted misma.</p>
+            <img src="../img/moon3.jpg" alt="Imagen" width="120vw">
+        </div>
+    </div>
     
+    <div class="overlay4" id="overlay4"></div>
 
+    <div class="ventana-emergente4" id="ventanaEmergente4">
+        <button class="cerrar4" onclick="cerrarVentana4()">Cerrar</button>
+        <div class="contenido4">
+            <h2>Mi Mensaje</h2>
+            <p>Aún cuando vea las circunstancias difíciles, no deje de lado sus valores <br> porque es la característica inicial de su personalidad. <br> Mostrando lealtad, compromiso y respeto a usted misma.</p>
+            <img src="../img/moon4.jpg" alt="Imagen" width="120vw">
+        </div>
+    </div>
     <script src="../JavaScript/script.js"></script>
 </body>
 </html>

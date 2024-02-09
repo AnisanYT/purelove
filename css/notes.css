@@ -24,7 +24,13 @@ button {
 
 #letter1, #letter2, #letter3, #letter4{
     position: relative;
-    font-size: 6rem;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+#sizeFont{
+    font-size: 7rem;
 }
 
 #letter1{
@@ -52,6 +58,9 @@ button {
 }
 
 
+
+
+
 @media only screen and (max-width: 768px) {
     #letter1{
         color: red;
@@ -76,3 +85,47 @@ button {
         top: 50vw;
     }
 }
+
+.overlay, .overlay2, .overlay3, .overlay4 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.ventana-emergente, .ventana-emergente2, .ventana-emergente3, .ventana-emergente4{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.ventana-emergente .cerrar, .ventana-emergente2 .cerrar2, .ventana-emergente3 .cerrar3, .ventana-emergente4 .cerrar4{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.ventana-emergente .contenido, .ventana-emergente2 .contenido2,  .ventana-emergente3 .contenido3, .ventana-emergente4 .contenido4{
+    text-align: center;
+}
+
+.ventana-emergente img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
