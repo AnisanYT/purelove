@@ -221,6 +221,18 @@ p{
     z-index: 999;
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 30%;
+    max-height: 100%;
+}
+
+
 @media only screen and (max-width: 768px) {
     body {
         background-image: url(../img/img_projec.jpg);
@@ -239,5 +251,10 @@ p{
         text-wrap: wrap;
         width: 10rem;
     }
+    video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
 
 }

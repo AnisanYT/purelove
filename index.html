@@ -72,17 +72,30 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-
+    
     <div id="modal3" class="modal3">
         <button class="cerrar" onclick="cerrarCarrousel3()">Cerrar</button>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/declaratoria.jpg" alt="imgDe una guapa"></div>
+                <div class="swiper-slide" data-audio="mp3/ifBreakTheRe.mp3">
+                    <img src="img/declaratoria.jpg" alt="imgDe una guapa">
+                </div>
+                <div class="swiper-slide">
+                    <video controls>
+                        <source src="video/dance.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video controls>
+                        <source src="video/graduateImHappy.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="musicPause" onclick="musicStop()"></div>
+            <div class="swiper-button-prev" id="musicPause"></div>
         </div>
     </div>
+    <audio id="audioPlayer" preload="auto"></audio>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="JavaScript/index.js"></script>
 </body>

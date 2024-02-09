@@ -88,3 +88,31 @@ function cerrarCarrousel3(){
     document.getElementById("audios").pause();
 
 }
+
+function musicStop (){
+    var pauseMusic = document.getElementById("audios");
+    pauseMusic.pause();
+}
+
+var swiper = new Swiper('.swiper-container', {
+        // Configuraciones de Swiper
+        loop: true,
+        // Agregar eventos para reproducir música
+        on: {
+            slideChangeTransitionStart: function () {
+                // Obtener el slide actual
+                var currentSlide = this.slides[this.activeIndex];
+                // Obtener el atributo de audio del slide actual
+                var audioSrc = currentSlide.getAttribute('data-audio');
+                // Reproducir la música del slide actual
+                reproducirMusica(audioSrc);
+            }
+        }
+    });
+
+    // Función para reproducir música
+    function reproducirMusica(src) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = src;
+        audioPlayer.play();
+    }
