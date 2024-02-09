@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.corazon {
+    width: 100px;
+    height: 100px;
+    fill: black; /* Color del corazón */
+}
+.corazon-container{
+    position: absolute;
+}
+
+
+button {
+    border: 0rem solid transparent;
+}
+
+#letter1, #letter2, #letter3, #letter4{
+    position: relative;
+    font-size: 6rem;
+}
+
+#letter1{
+    color: red;
+    left: 30vh;
+    top: 20vw;
+}
+
+#letter2{
+    color: tomato;
+    left: -20vh;
+    top: 20vw;
+}
+
+#letter3{
+    color: chocolate;
+    left: -10vh;
+    top: -20vw;
+}
+
+#letter4{
+    color: crimson;
+    left: 40vh;
+    top: 0vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #letter1{
+        color: red;
+        left: 30vh;
+        top: 20vw;
+    }
+    
+    #letter2{
+        color: tomato;
+        left: -10vh;
+        top: 30vw;
+    }
+    
+    #letter3{
+        color: chocolate;
+        left: -10vh;
+        top: -34vw;
+    }
+    #letter4{
+        color: crimson;
+        left: -20vh;
+        top: 50vw;
+    }
+}

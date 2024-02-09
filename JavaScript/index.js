@@ -3,7 +3,8 @@ function showCards(){
 
     var new_button = '<a onclick="reproducirAudio()" id="lifes_dalesya">¿Quieres escuchar algo bonito? 🤭</a>' +
     '<a onclick="abrirVentana()" id="lifes_dalesya">Para la más hermosa e indocumentada mujer</a>' +
-    '<a onclick="reproduce()" id="lifes_dalesya">Mis más hermosos deseos.</a>';
+    '<a onclick="reproduce()" id="lifes_dalesya">Mis más hermosos deseos.</a>'+
+    '<a href="html/notes.html" id="lifes_dalesya">Presiona aquí carbón quemado.</a>';
     //var new_divWithCard = '<div class="card"> <img src="img/img_projec_4.jpg" alt="La sonrisa mas hermosa que veras."> <div class="card-info"> <h2>La sonrisa mas hermosa</h2> <p>Tu corazón es tan grande como tu sonrisa, y en tu cumpleaños, quiero recordarte lo especial que eres para mí. Eres el amor de mi vida</p> </div> </div>';
     div_HTML.innerHTML = new_button;
     document.getElementById('lifes_dalesya').focus();
